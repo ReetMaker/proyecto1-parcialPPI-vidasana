@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IMC - Vida sana</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+    </style>
+    <link rel="icon" href="/img/logotipo.png">
+</head>
+<body>
+
+
+    <!-- Navegacion -->
+    <nav class="navbar">
+      <img src="/img/logo.png" alt="logo" class="logo">
+      <a href="/index.html">Inicio</a>
+      <a href="#">IMC</a>
+      <a href="/calorias.html">Calorias Counter</a>
+      <a href="/contact.html">Contacto</a>
+    </nav>
+    <!-- Navegacion -->
+
+    <!--Header-->
+    <header class="imch">Cálculo de IMC</header>
+    <!--Header-->
+
+  <main>
+    <!--Formulario-->
+      <form class="formulario">
+        <fieldset>
+          <legend>Ingresa tus datos</legend>
+
+            <div class="campo">
+              <label for="peso">Peso (En KG):</label>
+              <input type="number" id="peso" required placeholder="ej: 73">
+            </div>
+
+            <div class="campo">
+              <label for="altura">Altura (En CM):</label>
+              <input type="number" id="altura" required placeholder="ej: 173">
+            </div>
+
+            <div class="btn"> 
+              <button type="submit" class="button">Calcular</button>
+            </div>
+
+            <div class="campo">
+              <label for="resultado">Resultado del IMC:</label>
+              <input type="text" id="resultado" readonly>
+            </div>
+
+        </fieldset>
+      </form>
+    <!--Formulario-->
+
+    <!--Tabla de puntos-->
+    <div class="tabla">
+    <table>
+      <tr>
+        <th>Puntos de IMC</th>
+        <th>Tu rango</th>
+      </tr>
+        
+      <tr>
+        <td>15 o menos</td>
+        <td>Delgadez muy severa</td>
+      </tr>
+
+      <tr>
+        <td>15 - 15.9</td>
+        <td>Delgadez severa</td>
+      </tr>
+
+      <tr>
+        <td>16 - 18.4</td>
+        <td>Delgadez</td>
+      </tr>
+
+      <tr>
+        <td>18.5 - 24.9</td>
+        <td>Peso saludable</td>
+      </tr>
+
+      <tr>
+        <td>25 - 29.9</td>
+        <td>Sobrepeso</td>
+      </tr>
+
+      <tr>
+        <td>30 - 34.9</td>
+        <td>Obesidad moderada</td>
+      </tr>
+
+      <tr>
+        <td>35 - 39.9</td>
+        <td>Obesidad severa</td>
+      </tr>
+
+      <tr>
+        <td>40 o mas</td>
+        <td>Obesidad mórbida</td>
+      </tr>
+    </table>
+    </div>
+    <!--Tabla de puntos-->
+
+    <div class="main">
+      <h1>AVISO!</h1>
+      <p>No siempre los cálculos tradicionales del índice de masa muscular reflejan con precisión nuestra realidad de salud física. Si deseas conocer en detalle tu condición física, es recomendable acudir a un profesional que cuente con los instrumentos y herramientas adecuadas para esta tarea.</p>
+    </div>
+  </main>
+
+  <footer>
+    TODOS LOS DERECHOS RESERVADOS. FRANCO EMANUEL MARTINEZ (Resolucion recomendada 1366x768)
+  </footer>
+</body>
+</html>
