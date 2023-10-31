@@ -44,6 +44,18 @@ body {
     
 }
 
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+
+    .navbar a {
+        display: block; /* Coloca cada enlace en una nueva línea */
+        margin: 10px 0;
+    }
+}
+
 /*FIN NAVEGACION-------------------------------------------------------------------------------------------------*/
 
 
@@ -61,7 +73,7 @@ body {
 
 /*INICIO CONTENIDO PRINCIPAL-------------------------------------------------------------------------------------*/
 .main {
-    background-color: rgba(243, 156, 5, 99); /*la opacidad no quiere arrancar xd*/
+    background-color: rgba(243, 156, 5, 1); /*la opacidad no quiere arrancar xd , actualizacion 28/10: lo resolvi gracias al comentario del profesor pero ahora prefiero q se quede naranja*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,6 +86,11 @@ p {
     margin: 0 auto;
     margin-bottom: 2rem;
   }
+
+.login {
+    margin-top: 2rem;
+    font-size: 3rem;
+}
   
 /*FIN CONTENIDO PRINCIPAL----------------------------------------------------------------------------------------*/
 
@@ -146,6 +163,15 @@ form{
     justify-content: center;
     align-items: center;
 } 
+
+.oculto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    color: red;
+    font-weight: bold;
+}
 /*FIN FORMULARIO---------------------------------------------------------------------------------------------*/
 
 
@@ -250,4 +276,56 @@ select {
     justify-content: center;
     align-items: center;
 }
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 60px;
+}
+
 /*FIN CONTACTO-----------------------------------------------------------------------------------------------*/

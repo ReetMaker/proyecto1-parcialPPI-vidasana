@@ -2,22 +2,22 @@
 <html>
 <head>
   <title>IMC - Vida sana</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
     </style>
-    <link rel="icon" href="/img/logotipo.png">
+    <link rel="icon" href="img/logotipo.png">
 </head>
 <body>
 
 
     <!-- Navegacion -->
     <nav class="navbar">
-      <img src="/img/logo.png" alt="logo" class="logo">
-      <a href="/index.html">Inicio</a>
+      <img src="img/logo.png" alt="logo" class="logo">
+      <a href="index.html">Inicio</a>
       <a href="#">IMC</a>
-      <a href="/calorias.html">Calorias Counter</a>
-      <a href="/contact.html">Contacto</a>
+      <a href="calorias.html">Calorias Counter</a>
+      <a href="contact.html">Contacto</a>
     </nav>
     <!-- Navegacion -->
 
@@ -27,7 +27,7 @@
 
   <main>
     <!--Formulario-->
-      <form class="formulario">
+      <form class="formulario" id="imcform">
         <fieldset>
           <legend>Ingresa tus datos</legend>
 
@@ -38,17 +38,23 @@
 
             <div class="campo">
               <label for="altura">Altura (En CM):</label>
-              <input type="number" id="altura" required placeholder="ej: 173">
+              <input type="number" step="0.01" id="altura" required placeholder="ej: 1.73">
             </div>
 
             <div class="btn"> 
               <button type="submit" class="button">Calcular</button>
             </div>
 
-            <div class="campo">
+            <div class="campo"> 
+              <!--
               <label for="resultado">Resultado del IMC:</label>
-              <input type="text" id="resultado" readonly>
+              <input type="number" id="resultado" readonly>
+              -->
+              <p id="resul"></p>
             </div>
+
+            <div id="mensaje-alerta" class="oculto">¡Valores extremos!</div>
+          </div>
 
         </fieldset>
       </form>
@@ -114,5 +120,6 @@
   <footer>
     TODOS LOS DERECHOS RESERVADOS. FRANCO EMANUEL MARTINEZ (Resolucion recomendada 1366x768)
   </footer>
+  <script src="imc.js"></script>
 </body>
 </html>
